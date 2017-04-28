@@ -5,10 +5,6 @@
   margin-left: 10px;
 }
 
-.border {
-  border: 5px solid black;
-}
-
 .splash-flex {
   display: flex;
   width: 100%;
@@ -16,19 +12,22 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 12px;
+  border-top: 5px solid #f50;
+  background-image: url(https://va.sndcdn.com/bg/soundcloud:sounds:198949150/SC_background.jpg)
 }
 
 .sign-in {
   width: 40%;
-  height: 9%;
+  height: 18%;
   border-radius: 10px;
   font-size: 13px;
   background-color: transparent;
+  color: white;
 }
 
 .create-account {
   width: 150px;
-  height: 9%;
+  height: 18%;
   font-size: 13px;
   margin: 0px 15px;
   background-color: #f50;
@@ -38,4 +37,31 @@
 
 .buttons {
   display: flex;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.promotion {
+  display: flex;
+  flex: 0 0 100%;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+    button {
+      margin-top: 2%;
+      width: 15%;
+      height: 15%;
+      background-color: #f50;
+      border-radius: 5px;
+    }
+    h4 {
+      width: 50%;
+      color: white;
+    }
+    h1 {
+      color: white;
+    }
 }
