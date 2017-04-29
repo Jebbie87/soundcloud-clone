@@ -2,6 +2,7 @@
 import CoreLayout from '../layouts/CoreLayout'
 // import Home from './Home'
 import CounterRoute from './Counter'
+import MainRoute from './Main'
 import Splash from './Splash'
 
 /*  Note: Instead of using JSX, we recommend using react-router
@@ -12,7 +13,8 @@ export const createRoutes = (store) => ({
   component   : CoreLayout,
   indexRoute  : Splash(store),
   childRoutes : [
-    CounterRoute(store)
+    CounterRoute(store),
+    MainRoute(store)
   ]
 })
 

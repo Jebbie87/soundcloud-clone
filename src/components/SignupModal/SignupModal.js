@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import Modal from 'react-modal'
 
 export default class Signup extends Component {
-  closeModal = () => {
-    this.setState({ isOpen: false })
-  }
-
   render() {
     return (
       <Modal
@@ -13,6 +9,7 @@ export default class Signup extends Component {
         contentLabel='Modal'
       >
         <button onClick={this.props.closeModal}>close</button>
+        <h1 className='feature'>THIS FEATURE IS NOT YET IMPLEMENTED</h1>
       </Modal>
     )
   }

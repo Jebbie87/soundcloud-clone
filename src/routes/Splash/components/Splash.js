@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Signup from '../../../components/SignupModal'
+import { Link } from 'react-router'
 import PropTypes from 'prop-types'
 import SoundCloudLogo from '../assets/soundcloud_logo.svg.png'
 import './Splash.scss'
@@ -19,7 +20,7 @@ export default class Splash extends Component {
         <div className='splash-flex'>
           <img className='logo' src={SoundCloudLogo} />
           <div className='buttons'>
-            <button onClick={this.handleSignin} className='sign-in'>Sign In</button>
+            <Link to='/main'><button onClick={this.handleSignin} className='sign-in'>Sign In</button></Link>
             <button onClick={this.handleSignup} className='create-account'>Create account</button>
           </div>
           <div className='promotion'>
