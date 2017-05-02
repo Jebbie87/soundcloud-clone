@@ -5,7 +5,11 @@ import './Main.scss'
 export const Main = () => (
   <div>
     <Header />
-    <h1>Main page</h1>
+    <div className='user-list'>
+      <h1>Stream</h1>
+      <h1>Chart</h1>
+      <h1>Discover</h1>
+    </div>
   </div>
 )
 
