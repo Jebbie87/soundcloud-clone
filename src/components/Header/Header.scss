@@ -1,12 +1,112 @@
-.route--active {
-  font-weight: bold;
-  text-decoration: underline;
-}
+$grey: #ccc;
 
 .header {
-  // width: 100%;
+  display: flex;
+  padding: 0 15px;
+  max-height: 100px;
+  background-color: #333;
+  width: 100%;
+  align-items: center;
+
+  h6 {
+    color: $grey;
+  }
 }
 
-.border {
-  border: 5px solid black;
+.logo {
+  display: flex;
+  flex: 0 1 auto;
+
+  img {
+    width: 70px;
+    height: 45px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  flex: 1 1 auto;
+
+  .home {
+    height: 45px;
+    background: black;
+    display: flex;
+    flex: 1 1 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    height: 45px;
+    flex: 1 1 50%;
+  }
+}
+
+.search-form {
+  display: flex;
+  flex: 2 1 25%;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: -15px;
+
+  .search-bar {
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    right: 30px;
+  }
+}
+
+.user-profile-nav {
+  display: flex;
+  flex: 1 1 25%;
+  align-items: center;
+
+  .user-links {
+    display: flex;
+    flex: 1 1 50%;
+
+    a {
+      flex: 1 1 25%;
+    }
+
+    .upgrade {
+      color: red;
+    }
+
+    .user-profile {
+      display: flex;
+      flex: 1 1 50%;
+      align-items: center;
+
+      img {
+        height: 20px;
+        width: 20px;
+      }
+
+      h6 {
+        width: 100%;
+      }
+    }
+  }
+
+  .user-icons {
+    display: flex;
+    flex: 1 1 25%;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
 }
